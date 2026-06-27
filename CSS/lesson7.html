@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Lesson 7 - Images and Text Boxes</title>
+<style>
+  body { font-family: Arial, sans-serif; padding: 30px; background: #fff; }
+  h2 { margin-top: 50px; border-bottom: 2px solid #333; padding-bottom: 5px; }
+  .row { display: flex; gap: 30px; align-items: flex-start; flex-wrap: wrap; }
+
+  /* 7a */
+  .img-200 { width: 200px; border-radius: 10px; }
+
+  /* 7b */
+  .img-square {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  /* 7c */
+  .img-circle {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  /* 7d */
+  .textbox-rounded {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 16px;
+    font-size: 14px;
+    width: 200px;
+  }
+
+  /* 7e */
+  .textbox-shadow {
+    border: none;
+    border-radius: 24px;
+    padding: 12px 20px;
+    font-size: 14px;
+    width: 350px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.2);
+  }
+
+  /* 7f */
+  .linkedin-signup {
+    border: 1px solid #ddd;
+    padding: 20px;
+    max-width: 320px;
+  }
+  .linkedin-signup label { font-size: 13px; color: #444; display: block; margin-bottom: 4px; }
+  .linkedin-signup input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  .linkedin-signup .policy { font-size: 12px; color: #666; margin-bottom: 12px; }
+  .linkedin-signup .policy a { color: rgb(10,102,194); }
+  .linkedin-signup button {
+    width: 100%;
+    background: rgb(10, 102, 194);
+    color: white;
+    border: none;
+    border-radius: 24px;
+    padding: 12px;
+    font-weight: bold;
+  }
+
+  /* 7g */
+  .twitter-box {
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 400px;
+  }
+  .twitter-box img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+  }
+  .twitter-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    vertical-align: middle;
+  }
+  .twitter-box button {
+    background: rgb(29, 161, 242);
+    color: white;
+    border: none;
+    border-radius: 16px;
+    padding: 8px 18px;
+    font-weight: bold;
+    vertical-align: middle;
+  }
+</style>
+</head>
+<body>
+
+<h2>7a.</h2>
+<img class="img-200" src="cat.png" alt="cat">
+
+<h2>7b.</h2>
+<img class="img-square" src="cat.png" alt="cat">
+
+<h2>7c.</h2>
+<img class="img-circle" src="cat.png" alt="cat">
+
+<h2>7d.</h2>
+<input class="textbox-rounded" type="text" placeholder="Search">
+
+<h2>7e.</h2>
+<input class="textbox-shadow" type="text" placeholder="Search Google or type a URL">
+
+<h2>7f. Challenge</h2>
+<div class="linkedin-signup">
+  <label>Email</label>
+  <input type="text">
+  <p class="policy">By clicking Agree &amp; Join, you agree to the <a href="#">Privacy Policy</a>.</p>
+  <button>Agree &amp; Join</button>
+</div>
+
+<h2>7g. Challenge - Twitter textbox</h2>
+<div class="twitter-box">
+  <img src="cat.png" alt="profile">
+  <input type="text" placeholder="What's happening?">
+  <button>Tweet</button>
+</div>
+
+</body>
+</html>

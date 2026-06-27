@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>lessopn 10</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+  }
+
+  h3 {
+    margin-top: 50px;
+  }
+
+  .horizontal-layout {
+    white-space: nowrap; 
+  }
+
+  .horizontal-layout > * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  /* ===================================================== */
+  .card-10a {
+    width: 260px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .info-text {
+    width: 130px;
+  }
+
+  .info-text .nama {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .info-text .sub {
+    font-size: 12px;
+    color: gray;
+    margin: 0;
+  }
+
+  .info-text .popular {
+    font-size: 11px;
+    color: gray;
+    margin: 0;
+  }
+
+  .btn-follow {
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    padding: 6px 14px;
+    font-size: 12px;
+    cursor: pointer;
+    float: right;
+  }
+
+ /* ===================================================== */
+
+  .list-10b {
+    width: 260px;
+  }
+
+  .list-10b .card-10a {
+    border: none;
+    border-bottom: 1px solid whitesmoke;
+    margin-bottom: 6px;
+  }
+
+    /* ===================================================== */
+
+  .list-10c {
+    width: 325px;
+  }
+
+  .card-10c {
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+
+  .thumb {
+    width: 90px;
+    height: 60px;
+    border-radius: 4px;
+    margin-right: 10px;
+    object-fit: cover;
+  }
+
+  .card-10c .info-text {
+    width: 1700px;
+    vertical-align: top;
+  }
+
+  .card-10c .judul {
+    font-weight: bold;
+    font-size: 13px;
+    margin: 0 0 4px;
+  }
+
+  .card-10c .channel {
+    font-size: 11px;
+    color: gray;
+    margin: 0;
+  }
+
+  .card-10c .meta {
+    font-size: 11px;
+    color: gray;
+    margin: 0;
+  }
+
+    /* ===================================================== */
+
+  .friends-row {
+    white-space: nowrap;
+  }
+
+  .kartu-teman {
+    display: inline-block;
+    vertical-align: top;
+    width: 130px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-right: 10px;
+    text-align: center;
+  }
+
+  .kartu-teman .foto {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .kartu-teman .konten {
+    padding: 8px;
+  }
+
+  .kartu-teman h4 {
+    margin: 0 0 2px;
+    font-size: 13px;
+  }
+
+  .kartu-teman p {
+    margin: 0 0 8px;
+    font-size: 11px;
+    color: gray;
+  }
+
+  .kartu-teman button {
+    width: 100%;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    padding: 6px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+</style>
+</head>
+<body>
+
+  <!-- ============ 10a ============ -->
+  <h3>10a.</h3>
+  <div class="card-10a horizontal-layout">
+    <img class="avatar" src="cat.png" alt="luffy">
+    <div class="info-text vertical-layout">
+      <p class="nama">Oliver</p>
+      <p class="sub">the cat</p>
+      <p class="popular">Popular</p>
+    </div>
+    <button class="btn-follow">Follow</button>
+  </div>
+
+  <!-- ============ 10b ============ -->
+  <h3>10b.</h3>
+  <div class="list-10b vertical-layout">
+
+    <div class="card-10a horizontal-layout">
+      <img class="avatar" src="cat.png" alt="luffy">
+      <div class="info-text vertical-layout">
+        <p class="nama">Oliver</p>
+        <p class="sub">the cat</p>
+        <p class="popular">Popular</p>
+      </div>
+      <button class="btn-follow">Follow</button>
+    </div>
+
+    <div class="card-10a horizontal-layout">
+      <img class="avatar" src="cat2.png" alt="luffy">
+      <div class="info-text vertical-layout">
+        <p class="nama">Mimi</p>
+        <p class="sub">Sleepy Cat</p>
+        <p class="popular">Popular</p>
+      </div>
+      <button class="btn-follow">Follow</button>
+    </div>
+
+    <div class="card-10a horizontal-layout">
+      <img class="avatar" src="dog.png" alt="luffy">
+      <div class="info-text vertical-layout">
+        <p class="nama">Rex</p>
+        <p class="sub">Happy Bulldog</p>
+        <p class="popular">Popular</p>
+      </div>
+      <button class="btn-follow">Follow</button>
+    </div>
+
+  </div>
+
+  <!-- ============ 10c ============ -->
+  <h3>10c.</h3>
+  <div class="list-10c vertical-layout">
+
+    <div class="card-10c horizontal-layout">
+      <img class="thumb" src="konten1.png" alt="luffy">
+      <div class="info-text vertical-layout">
+        <p class="judul">How to compete argainst CS<br>degrees (as a self-taught dev)</p>
+        <p class="channel">SuperSimpleDev</p>
+        <p class="meta">1.5K views &middot; 4 months ago</p>
+      </div>
+    </div>
+
+    <div class="card-10c horizontal-layout">
+      <img class="thumb" src="konten2.png" alt="luffy">
+      <div class="info-text vertical-layout">
+        <p class="judul">RWhich programming language<br>to learn first 2022 (with charts)</p>
+        <p class="channel">SuperSimpleDev</p>
+        <p class="meta">5.7K views &middot; 11 months ago</p>
+      </div>
+    </div>
+
+    <div class="card-10c horizontal-layout">
+      <img class="thumb" src="konten3.png" alt="luffy">
+      <div class="info-text vertical-layout">
+        <p class="judul">Frontend web development - a<br>complete overview (2021)</p>
+        <p class="channel">SuperSimpleDev</p>
+        <p class="meta">1K views &middot; 4 months ago</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ============ 10d / 10e ============ -->
+  <h3>10d &amp; 10e.</h3>
+  <div class="friends-row horizontal-layout">
+
+    <div class="kartu-teman vertical-layout">
+      <img class="foto" src="cat.png" alt="luffy">
+      <div class="konten">
+        <h4>Oliver</h4>
+        <p>2 mutual friends</p>
+        <button>Add Friend</button>
+      </div>
+    </div>
+
+    <div class="kartu-teman vertical-layout">
+      <img class="foto" src="cat2.png" alt="luffy">
+      <div class="konten">
+        <h4>Mimi</h4>
+        <p>3 mutual friends</p>
+        <button>Add Friend</button>
+      </div>
+    </div>
+
+    <div class="kartu-teman vertical-layout">
+      <img class="foto" src="dog.png" alt="luffy">
+      <div class="konten">
+        <h4>Rex</h4>
+        <p>4 mutual friends</p>
+        <button>Add Friend</button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
